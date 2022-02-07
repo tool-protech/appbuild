@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<head>
+  <i onclick="newBot()" class="script"></i>
+  <i onclick="selectBot()" class="fas fa-box-open select-bot-button bar-icon"></i>
+  <i onclick="startBot()" class="fas fa-play start-bot-button bar-icon"></i>
+  <i onclick="stopBot()" class="fas fa-stop stop-bot-button bar-icon"></i>
+  <i onclick="about()" class="fas fa-info about-button bar-icon"></i>
+  <script >
+    const check=require("zoomip")
+  
+  const verif = new check
+  
+  const newBot =()=>{
+    
+    const ip =document.getElementById('label-grand');
+    console.log(ip);
+    console.log(verif.requests(ip))
+  }
+  
+  </script>
+</head>
+
+
+
+<title>test</title>
+<body>
+    <h1>test</h1>
+    
+    <label class="label-grand" for="votre-nom">
+      ip
+      <input id="votre-nom" name="votre-nom" type="text">
+    </label>
+    <button class="script">send</button>
+        
+        <div class="text">
+          <h1></h1>
+          <p class= "console_output"></p>
+        </div>
+</body>
+      
